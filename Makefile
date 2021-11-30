@@ -5,10 +5,10 @@ default:
 
 setup: 
 	@echo Installing developer tooling, godep and reflex
-	go get github.com/tools/godep
-	go get github.com/cespare/reflex/...
-	go get golang.org/x/tools/cmd/cover
-	go get github.com/vektra/mockery/...
+	go install github.com/tools/godep@latest
+	go install github.com/cespare/reflex/...@latest
+	go install golang.org/x/tools/cgmd/cover@latest
+	go install github.com/vektra/mockery/...@latest
 
 .goxc.ok:
 	@echo Installing crossbuild tooling. This will take a while...
